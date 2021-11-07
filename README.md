@@ -96,6 +96,6 @@ FROM TABLE AS T
 
 - If joining two or more tables, always prefix your column names with the table alias. If only selecting from one table, prefixes are not needed.
 
-- Be explicit about your join (i.e. write INNER JOIN instead of JOIN). LEFT JOIN(s) are normally the most useful, RIGHT JOIN(s) often indicate that you should change which table you select FROM and which one you JOIN to.
+- Be explicit about your join (i.e. write **INNER JOIN** instead of **JOIN** ). **LEFT JOIN**(s) are normally the most useful, **RIGHT JOIN**(s) often indicate that you should change which table you select FROM and which one you JOIN to.
 
 - DO NOT OPTIMIZE FOR A SMALLER NUMBER OF LINES OF CODE. NEWLINES ARE CHEAP, BRAIN TIME IS EXPENSIVE
