@@ -1,10 +1,12 @@
 DBT Snowflake Style Guide  
 
+
 Jinja style guide
 
 When using Jinja delimiters, use spaces on the inside of your delimiter, like {{ this }} instead of {{this}}
 
 Use newlines to visually indicate logical blocks of Jinja
+
 
 Naming and field conventions
 
@@ -14,11 +16,7 @@ Schema, table and column names should be in SNAKE_CASE.
 
 Use declared datatypes in source tables as early as possible, after this we don’t need to declare datatypes in following models/tables that reference the earlier model. Use this method to declare datatypes: FIELD_NAME::DATATYPE()
 
-Use the correct datatype for each field i.e. BOOLEAN datatype for true false, DATES, NUMBERS (note: make sure to use correct decimal places i.e. 2 for values 6 for currency rates). Find documentation on Snowflake datatypes here: Snowflake Data Types
-
-Use names based on the business terminology, rather than the source terminology.
-
-Refer to business terminology in this document for field names: Business Terminology 
+Use the correct datatype for each field i.e. BOOLEAN datatype for true false, DATES, NUMBERS (note: make sure to use correct decimal places i.e. 2 for values 6 for currency rates).
 
 Each model should have a primary key.
 
@@ -50,7 +48,8 @@ Avoid reserved words as column names i.e. FROM SELECT etc.
 
 Consistency is key! Use the same field names across models where possible, e.g. a key to the CUSTOMERStable should be named CUSTOMER_IDrather than USER_ID.
 
-SQL style guide
+
+    SQL style guide
 
 Use quotes "" around field names in final output, and even in subqueries (without this can cause issues in snowflake)
 
